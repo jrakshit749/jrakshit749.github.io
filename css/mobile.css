@@ -1,0 +1,130 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, sans-serif;
+    -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+/*
+*Varialbles
+*/
+:root {
+    --green: red;
+    --sketch_bg: #c8c8c8;
+}
+/*
+*************  Main  *******************
+*/
+
+body {
+    /*background: var(--green);
+*/
+    /* background-image:linear-gradient(0deg, #c8c8c8 5.66%, #fff 94.35%); */
+    width:100%;
+    height:100%;
+}
+
+.container1 {
+    position:top;
+    width: 100%;
+    height:100%;
+
+}
+
+
+#sketch {
+    width: 100%;
+    height:40vh;
+    padding: 50px;
+    align-items: center;
+    background: var(--sketch_bg);
+
+}
+
+#name {
+    display: block;
+    font-family: arial, helvetica;
+    width: 100%;
+    height: 300px;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-100%);
+}
+
+.i_am {
+    display:block;
+    padding:2px 13px 0 0px;
+    float: left;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-450%,-60%);
+}
+
+
+
+.rakshit {
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-60%);
+}
+.jha {
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-89%,50%);
+}
+
+.q1 {
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform:translate(22%,490%);
+
+}
+.q2 {
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-53%,590%);
+}
+#domains {
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,40%);
+}
+
+.domain-names{
+    height: auto;
+    width:400px;
+}
+
+#button {
+
+    position: fixed;
+    background-color: yellow;
+    top:50%;
+    left:50%;
+    /* width:100%; */
+    transform:translate(-75%, 900%);
+}
+
+.button-box {
+    width:100%;
+    height:30px;
+    outline:none;
+    background-color:green;
+}
+
+.container2 {
+    display:block;
+    width: 100%;
+    height: 100%;
+}
+
+button {
+    border:none;
+    padding: 2px;
+}
