@@ -162,40 +162,6 @@ a{
     position: relative;
     transition:all 0.5s ease;
 }
-/* .middle{
-    background:peachpuff;
-}
-
-    .card{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    transform-style: preserve-3d;
-    transition:all .5s ease;
-}
-
-.card:hover {
-    transform:rotateY(180deg)   
-}
-
-.front{
-    position: absolute;
-    display:grid;
-    place-items: center;
-    width: 100%;
-    height: 100%;
-    backface-visibility:hidden;
-}
-
-.back{
-    display:grid;
-    place-items: center;
-    position: absolute;
-    width: 100%;height: 100%;
-    backface-visibility: hidden;
-    color:red;
-    transform:rotateY(180deg);
-} */
 
 .quality-aligner{
     width: 100%;
@@ -757,11 +723,11 @@ a{
         -ms-transform: translate(-50%, -50%);
         transform: translate(-50%, -50%);
         text-align: center;
-        transition:.75s ease-in-out;
+        transition:.7s ease-in-out;
       }
     
       .skills:hover .text, .projects:hover .text, .certifications:hover .text{
-          font-size:200rem;
+          font-size:250rem;
       }
 
     .skills p, .projects p, .certifications p{
