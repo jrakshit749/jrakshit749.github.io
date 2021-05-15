@@ -270,15 +270,15 @@ body{
 .professional-wrapper .content .bar .p2::after,
 .professional-wrapper .content .bar .p3::after,
 .professional-wrapper .content .bar .p4::after{
-    content:'88';
+    content:'88 bits';
     padding-left: 1vw;
     font-family: monospace;
-    font-size: 1rem;
+    font-size: 1.25rem;
     font-weight: 500;
 }
-.professional-wrapper .content .bar .p2::after{content:'70'}
-.professional-wrapper .content .bar .p3::after{content:'79'}
-.professional-wrapper .content .bar .p4::after{content:'85'}
+.professional-wrapper .content .bar .p2::after{content:'70 bits'}
+.professional-wrapper .content .bar .p3::after{content:'79 bits'}
+.professional-wrapper .content .bar .p4::after{content:'85 bits'}
 
 .professional-wrapper .content .bar .progress .text{
     background: #434343;
@@ -287,7 +287,7 @@ body{
     display: grid;
     place-items: center;
     height:100%;
-    font-size: 1rem;
+    font-size: 1.3rem;
     float: left;
 }
 .professional-wrapper .content .bar .progress .t1{width: 25%; min-width: 60px;}
@@ -307,15 +307,15 @@ body{
 .inprogress-wrapper .image-in-progress{
     display: grid;
     place-items: center;
-    transition: 1s ease-in-out;
 
 }
 .inprogress-wrapper img{
     width: 200px;
     min-width:100px;
+    transition: 1s ease-in-out;
 
 }
-.inprogress-wrapper .image-in-progress:hover{
+.inprogress-wrapper:hover img{
     filter:hue-rotate(180deg);
 }
 /*---------------Personal Skills-------------------*/
@@ -331,14 +331,15 @@ body{
 .personal-wrapper img{
     width: 300px;
     min-width:150px;
+    transition: 1s ease-in-out;
+
 }
 .personal-wrapper .image-in-progress{
     display: grid;
     place-items: center;
     margin: 20% 0;
-    transition: 1s ease-in-out;
 
 }
-.personal-wrapper .image-in-progress:hover{
+.personal-wrapper:hover img{
     filter:hue-rotate(180deg);
 }
