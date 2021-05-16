@@ -302,10 +302,10 @@ body{
     font-size: 1.3rem;
     float: left;
 }
-.professional-wrapper .content .bar .progress .t1{width: 25%; min-width: 110px;}
-.professional-wrapper .content .bar .progress .t2{width: 28%;min-width: 130px;} 
-.professional-wrapper .content .bar .progress .t3{width: 18%;min-width: 75px;}
-.professional-wrapper .content .bar .progress .t4{width: 20%;min-width: 90px;}
+.professional-wrapper .content .bar .progress .t1{width: 25%; min-width: 110px;max-width:130px;}
+.professional-wrapper .content .bar .progress .t2{width: 28%;min-width: 130px;max-width:150px;} 
+.professional-wrapper .content .bar .progress .t3{width: 18%;min-width: 75px;max-width:95px;}
+.professional-wrapper .content .bar .progress .t4{width: 20%;min-width: 90px;max-width:110px;}
 
 
 /*---------------In Progress Skills-------------------*/
@@ -320,10 +320,6 @@ body{
 .inprogress-wrapper .heading{
     display: flex;
 }
-.inprogress-wrapper .heading .image-in-progress{
-    float:right;
-}
-
 .inprogress-wrapper img{
     width: 30px;
     min-width:20px;
@@ -334,6 +330,55 @@ body{
 .inprogress-wrapper:hover img{
     filter:hue-rotate(360deg);
 }
+.inprogress-wrapper .content{
+    font-family: 'Roboto Mono', monospace;
+    display:grid;
+    place-items: center;
+    height:20vh;
+}
+
+.inprogress-wrapper .content .bar{
+    width:40vw;
+    height:40px;
+    background:white;
+    border-radius: 5px;
+    margin:1.5%;
+    min-width:320px;
+
+}
+.inprogress-wrapper .content .bar .progress{
+    height: 100%;;
+    background: linear-gradient(270deg, #AEE1F9 33.33%, rgba(255, 255, 255, 0) 100%);
+    border-radius: 5px;
+    margin:auto 0;
+    display: flex;
+    align-items: center;
+    
+}
+.inprogress-wrapper .content .bar .p12{width: 39%;}
+.inprogress-wrapper .content .bar .p13{width: 64%;}
+.inprogress-wrapper .content .bar .p12::after,
+.inprogress-wrapper .content .bar .p13::after{
+    content:'39 bits';
+    padding-left: 1vw;
+    font-family: monospace;
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+.inprogress-wrapper .content .bar .p13::after{content:'64 bits';}
+.inprogress-wrapper .content .bar .progress .text{
+    background: #434343;
+    border-radius: 5px;
+    color:#e0e0e0;
+    display: grid;
+    place-items: center;
+    height:100%;
+    font-size: 1.3rem;
+    float: left;
+}
+.inprogress-wrapper .content .bar .progress .t12{width: 75%; min-width: 100px;max-width:120px;}
+.inprogress-wrapper .content .bar .progress .t13{width: 70%;min-width: 200px;max-width:220px;} 
+
 /*---------------Personal Skills-------------------*/
 .personal-wrapper{
     background: linear-gradient(90deg, rgba(162, 194, 243, 0.5) 18.75%, rgba(231, 203, 207, 0.5) 85.42%);
@@ -414,12 +459,12 @@ body{
     font-size: 1.3rem;
     float: left;
 }
-.personal-wrapper .content .bar .progress .t5{width: 28%; min-width: 130px;}
-.personal-wrapper .content .bar .progress .t6{width: 40%;min-width: 190px;} 
-.personal-wrapper .content .bar .progress .t7{width: 25%;min-width: 130px;}
-.personal-wrapper .content .bar .progress .t8{width: 34%;min-width: 170px;}
-.personal-wrapper .content .bar .progress .t9{width: 25%;min-width: 130px;}
-.personal-wrapper .content .bar .progress .t10{width: 40%;min-width: 190px;}
-.personal-wrapper .content .bar .progress .t11{width: 22%;min-width: 110px;}
+.personal-wrapper .content .bar .progress .t5{width: 28%; min-width: 130px;max-width:150px;}
+.personal-wrapper .content .bar .progress .t6{width: 40%;min-width: 190px;max-width:210px;} 
+.personal-wrapper .content .bar .progress .t7{width: 25%;min-width: 130px;max-width:150px;}
+.personal-wrapper .content .bar .progress .t8{width: 34%;min-width: 170px;max-width:190px;}
+.personal-wrapper .content .bar .progress .t9{width: 25%;min-width: 130px;max-width:150px;}
+.personal-wrapper .content .bar .progress .t10{width: 40%;min-width: 190px;max-width:210px;}
+.personal-wrapper .content .bar .progress .t11{width: 22%;min-width: 110px;max-width:130px;}
 
 
