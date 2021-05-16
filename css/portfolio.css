@@ -235,18 +235,30 @@ body{
     background: linear-gradient(90deg, rgba(255, 196, 231, 0.5) 7.29%, rgba(148, 245, 238, 0.5) 98.44%);
     width:45vw;
     height:40vh;
+    min-height: 325px;
     border-radius: 10px;
     backdrop-filter: blur(10px);
+    min-width: 350px;
 }
+
+@media screen and (max-width:1500px){
+    .professional-wrapper{
+        min-height:300px;
+    }
+    }
+
 .professional-wrapper .content{
     font-family: 'Roboto Mono', monospace;
     display:grid;
     place-items: center;
-    height:30vh;
+    height:39vh;
+    max-height:270px ;
+    /* background:Red; */
 }
 
 .professional-wrapper .content .bar{
     width:40vw;
+    min-width: 320px;
     height:40px;
     background:white;
     border-radius: 5px;
@@ -290,33 +302,37 @@ body{
     font-size: 1.3rem;
     float: left;
 }
-.professional-wrapper .content .bar .progress .t1{width: 25%; min-width: 60px;}
-.professional-wrapper .content .bar .progress .t2{width: 28%;min-width: 65px;} 
-.professional-wrapper .content .bar .progress .t3{width: 18%;min-width: 45px;}
-.professional-wrapper .content .bar .progress .t4{width: 20%;min-width: 50px;}
+.professional-wrapper .content .bar .progress .t1{width: 25%; min-width: 110px;}
+.professional-wrapper .content .bar .progress .t2{width: 28%;min-width: 130px;} 
+.professional-wrapper .content .bar .progress .t3{width: 18%;min-width: 75px;}
+.professional-wrapper .content .bar .progress .t4{width: 20%;min-width: 90px;}
 
 
 /*---------------In Progress Skills-------------------*/
 .inprogress-wrapper{
     margin-top: 5vh;
     width:45vw;
+    min-width:350px;
     background: linear-gradient(90deg, rgba(187, 203, 255, 0.5) 0%, rgba(255, 186, 230, 0.5) 100%);    height:30vh;
     border-radius: 10px;
     backdrop-filter: blur(10px);
 }
-.inprogress-wrapper .image-in-progress{
-    display: grid;
-    place-items: center;
-
+.inprogress-wrapper .heading{
+    display: flex;
 }
+.inprogress-wrapper .heading .image-in-progress{
+    float:right;
+}
+
 .inprogress-wrapper img{
-    width: 200px;
-    min-width:100px;
-    transition: 1s ease-in-out;
+    width: 30px;
+    min-width:20px;
+    padding-left: 1vw;
+    transition: 0.5s ease-in-out;
 
 }
 .inprogress-wrapper:hover img{
-    filter:hue-rotate(180deg);
+    filter:hue-rotate(360deg);
 }
 /*---------------Personal Skills-------------------*/
 .personal-wrapper{
@@ -325,21 +341,85 @@ body{
     height:75vh;
     float:left;
     border-radius: 10px;
-    backdrop-filter: blur(10px);    
+    backdrop-filter: blur(10px);  
+    min-height:490px;  
+    min-width:350px;
+}
+@media screen and (max-width:1500px){
+.personal-wrapper{
+    min-height:475px;
+}
 }
 
-.personal-wrapper img{
-    width: 300px;
-    min-width:150px;
-    transition: 1s ease-in-out;
+.personal-wrapper .content{
+    font-family: 'Roboto Mono', monospace;
+    display:grid;
+    place-items: center;
+    height:65vh;
+}
+
+.personal-wrapper .content .bar{
+    width:40vw;
+    height:40px;
+    background:white;
+    border-radius: 5px;
+    margin:1.5%;
+    min-width:320px;
 
 }
-.personal-wrapper .image-in-progress{
+.personal-wrapper .content .bar .progress{
+    height: 100%;;
+    background: linear-gradient(270deg, #AEE1F9 33.33%, rgba(255, 255, 255, 0) 100%);
+    border-radius: 5px;
+    margin:auto 0;
+    display: flex;
+    align-items: center;
+    
+}
+.personal-wrapper .content .bar .p5{width: 85%;}
+.personal-wrapper .content .bar .p6{width: 81%;}
+.personal-wrapper .content .bar .p7{width: 87%;}
+.personal-wrapper .content .bar .p8{width: 83%;}
+.personal-wrapper .content .bar .p9{width: 90%;}
+.personal-wrapper .content .bar .p10{width: 78%;}
+.personal-wrapper .content .bar .p11{width: 86%;}
+
+.personal-wrapper .content .bar .p5::after,
+.personal-wrapper .content .bar .p6::after,
+.personal-wrapper .content .bar .p7::after,
+.personal-wrapper .content .bar .p8::after,
+.personal-wrapper .content .bar .p9::after,
+.personal-wrapper .content .bar .p10::after,
+.personal-wrapper .content .bar .p11::after{
+    content:'85 bits';
+    padding-left: 1vw;
+    font-family: monospace;
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+.personal-wrapper .content .bar .p6::after{content:'81 bits'}
+.personal-wrapper .content .bar .p7::after{content:'87 bits'}
+.personal-wrapper .content .bar .p8::after{content:'83 bits'}
+.personal-wrapper .content .bar .p9::after{content:'90 bits'}
+.personal-wrapper .content .bar .p10::after{content:'78 bits'}
+.personal-wrapper .content .bar .p11::after{content:'86 bits'}
+
+.personal-wrapper .content .bar .progress .text{
+    background: #434343;
+    border-radius: 5px;
+    color:#e0e0e0;
     display: grid;
     place-items: center;
-    margin: 20% 0;
+    height:100%;
+    font-size: 1.3rem;
+    float: left;
+}
+.personal-wrapper .content .bar .progress .t5{width: 28%; min-width: 130px;}
+.personal-wrapper .content .bar .progress .t6{width: 40%;min-width: 190px;} 
+.personal-wrapper .content .bar .progress .t7{width: 25%;min-width: 130px;}
+.personal-wrapper .content .bar .progress .t8{width: 34%;min-width: 170px;}
+.personal-wrapper .content .bar .progress .t9{width: 25%;min-width: 130px;}
+.personal-wrapper .content .bar .progress .t10{width: 40%;min-width: 190px;}
+.personal-wrapper .content .bar .progress .t11{width: 22%;min-width: 110px;}
 
-}
-.personal-wrapper:hover img{
-    filter:hue-rotate(180deg);
-}
+
