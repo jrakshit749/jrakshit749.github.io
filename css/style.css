@@ -268,8 +268,8 @@ a{
 
 .header-text{
     font-size: 3rem;
-    margin-top: 3%;
-    margin-left:5%;
+    margin-top: 4%;
+    margin-left:3%;
     position: absolute;
 
 }
@@ -314,7 +314,7 @@ a{
 .assigner-image img{
     padding:5px;
     width: 100%;
-    filter: hue-rotate(0deg);
+    filter: hue-rotate(0deg) contrast(200%);
 }
 /*----------------------------------------------------------*/
 /*----------------------------------------------------------*/
@@ -348,18 +348,22 @@ a{
     justify-content:space-evenly ;
 }
 .var1 .email .email-box{
-    width:70%;
+    width:65%;
     display: grid;
     place-items: center;
+    filter:contrast(200%);
 }
 .var1 .email .email-icon{
     display:grid;
     place-items: center;
     border-radius: 10px;
+    width:30%;
 }
 
 .email-icon img{
     width:50%;
+    min-width: 55px;
+
 }
  .var1 .email .email-box .email-img img{
     width:100%;
@@ -393,12 +397,20 @@ a{
     width: 70%;
     display: grid;
     place-items: center;
+    filter:contrast(200%);
 }
 
 .cv-icon{
     display:grid;
     place-items: center;
     border-radius: 10px;
+    width:150px;
+    filter: grayscale(100%);
+    transition: 0.075s ease-in-out;
+}
+.var2:hover .cv-icon{
+    filter: grayscale(0%);
+
 }
 
 .cv-img{
@@ -446,13 +458,14 @@ a{
     width: 100%;
     display: grid;
     place-items: center;
-
+    filter:contrast(200%);
 }
  .insta-icon{
     display:grid;
     place-items: center;
     border-radius: 10px;
     filter: grayscale(100%);
+    width:85px;
     transition: 0.075s ease-in-out;
 }
 
@@ -502,6 +515,7 @@ a{
     width: 100%;
     display: grid;
     place-items: center;
+    filter:contrast(200%);
 }
 .git-icon{
     display:grid;
@@ -557,6 +571,7 @@ a{
     width: 100%;
     display: grid;
     place-items: center;
+    filter:contrast(200%);
 }
 .tweet-in-icon{
     display:grid;
@@ -564,6 +579,7 @@ a{
     border-radius: 10px;
     filter: grayscale(100%);
     transition: 0.075s ease-in-out;
+    width:86.89px;
 }
 
 .var5:hover .tweet-in-icon:hover{
@@ -578,7 +594,7 @@ a{
 .var5 .tweet-in .tweet-in-box .tweet-in-img img{
     width:100%;
 }
-.tweet-in-icon img{width:82.5%;}
+.tweet-in-icon img{width:72.5%;}
 
 }
 
@@ -770,7 +786,7 @@ a{
 
     .header-text{
         font-size: max(1vh,3rem);  
-        padding-top:1vh;  
+        padding-top:2vh;  
     }
     
     .let-name{
@@ -861,7 +877,7 @@ a{
         justify-content:space-evenly ;
     }
     .var1 .email .email-box{
-        width:70%;
+        width:65%;
         display: grid;
         place-items: center;
     }
@@ -869,6 +885,7 @@ a{
         display:grid;
         place-items: center;
         border-radius: 10px;
+        width:30%;
     }
 
     .email-box{
@@ -930,6 +947,7 @@ a{
         display:grid;
         place-items: center;
         border-radius: 10px;
+        width:150px;
     }
     
     .cv-img{
@@ -982,13 +1000,9 @@ a{
         display:grid;
         place-items: center;
         border-radius: 10px;
-        filter: grayscale(100%);
+        /* filter: grayscale(100%); */
+        width:90.5px;
         transition: 0.075s ease-in-out;
-    }
-    
-    .var3:hover .insta-icon{
-        filter: grayscale(0%);
-    
     }
     
     .insta-img{
@@ -1036,12 +1050,10 @@ a{
         display:grid;
         place-items: center;
         border-radius: 10px;
-        filter: contrast(0%);
-        transition: 0.075s ease-in-out;
-    }
-    
-    .var4:hover .git-icon{
         filter: contrast(100%);
+        transition: 0.075s ease-in-out;
+        width:90.5px;
+
     }
     
     .git-img{
@@ -1050,7 +1062,7 @@ a{
         width: 50%;
     }
     .var4 .git .git-box .git-img img{width:100%;}
-    .git-icon img{width:73%;}
+    .git-icon img{width:65.7%;}
     
     
     /*----------------------------------------------------------*/
@@ -1090,12 +1102,9 @@ a{
         display:grid;
         place-items: center;
         border-radius: 10px;
-        filter: grayscale(100%);
+        /* filter: grayscale(100%); */
         transition: 0.075s ease-in-out;
-    }
-    
-    .var5:hover .tweet-in-icon:hover{
-        filter: grayscale(0%);
+        width:75px;
     }
     
     .tweet-in-img{
