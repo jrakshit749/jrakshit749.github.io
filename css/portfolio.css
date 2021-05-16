@@ -316,7 +316,8 @@ body{
     margin-top: 5vh;
     width:45vw;
     min-width:350px;
-    background: linear-gradient(90deg, rgba(187, 203, 255, 0.5) 0%, rgba(255, 186, 230, 0.5) 100%);    height:30vh;
+    background: linear-gradient(90deg, rgba(187, 203, 255, 0.5) 0%, rgba(255, 186, 230, 0.5) 100%);    
+    height:30vh;
     border-radius: 10px;
     backdrop-filter: blur(10px);
 }
@@ -327,11 +328,12 @@ body{
     width: 30px;
     min-width:20px;
     padding-left: 1vw;
+    filter:contrast(90%);
     transition: 0.5s ease-in-out;
 
 }
 .inprogress-wrapper:hover img{
-    filter:hue-rotate(360deg);
+    filter:contrast(120%);
 }
 .inprogress-wrapper .content{
     font-family: 'Roboto Mono', monospace;
@@ -351,8 +353,7 @@ body{
 }
 .inprogress-wrapper .content .bar .progress{
     height: 100%;;
-    background: linear-gradient(270deg, #AEE1F9 33.33%, rgba(255, 255, 255, 0) 100%);
-    border-radius: 5px;
+    background: linear-gradient(270deg, #9CB2FD 15%, rgba(255, 255, 255, 0) 100%);    border-radius: 5px;
     margin:auto 0;
     display: flex;
     align-items: center;
