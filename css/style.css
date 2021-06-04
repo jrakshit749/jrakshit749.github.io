@@ -154,7 +154,7 @@ a{
 }
 
 .left, .right, .middle{
-    width:30vw;
+    width:33vw;
     height:100vh;
     display:grid;
     place-items: center;
